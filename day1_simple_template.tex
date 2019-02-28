@@ -1,10 +1,12 @@
-\documentclass[a4paper,12pt]{article} %must appear at the beginning
+\documentclass[a4paper,12pt]{article} %must appear at the beginning of Latex file. 
 
-% Anything typed before\begin{document}is known as the preamble, and will affect the whole document
+% You can modify your own document class and configuration. Simply Google "document class for Latex" if you get stuck
+
+
+% Anything typed before \begin{document} is known as the preamble, and will affect the whole document
 
 \begin{document} 
 
- 
 
 % make a title
 
@@ -16,15 +18,19 @@
 
 \maketitle
 
-% make contents after maketitle
+% end of title
 
-\pagenumbering{roman}
+
+% we can make contents page after maketitle
+
+\pagenumbering{roman} % set page number to roman format
 
 \tableofcontents 
 
 \newpage
 
-\pagenumbering{arabic} 
+\pagenumbering{arabic} % set page number to arabic format 
+
 
 % section and subsection are available for book and report class
 
@@ -32,27 +38,25 @@
 
 This is the introduction. 
 
- 
 
 \section{Methods}
 
- 
 
 \subsection{Stage 1} 
 
 The first part of the methods.
 
- 
 
 \subsection{Stage 2}
 
 The second part of the methods. 
 
- 
 
 \section{Results}
 
 Referring to section \ref{sec1} on page \pageref{sec1}
+
+
 
 \end{document}
 
